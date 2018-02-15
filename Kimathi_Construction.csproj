@@ -257,6 +257,12 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\important nugets\Beautiful-Winform-Notifications---winforms\custom_alert_notifications\custom_alert_notifications.csproj">
+      <Project>{c6009a3f-00ee-45d4-9944-d80400ecd12c}</Project>
+      <Name>custom_alert_notifications</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

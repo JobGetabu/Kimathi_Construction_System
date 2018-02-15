@@ -305,6 +305,7 @@
             this.btnVerify.TabIndex = 12;
             this.btnVerify.Text = "Verify";
             this.btnVerify.UseVisualStyleBackColor = false;
+            this.btnVerify.Click += new System.EventHandler(this.btnVerify_Click);
             // 
             // groupBox3
             // 
@@ -439,6 +440,7 @@
             this.btnSave.TabIndex = 14;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // EmployeeUI
             // 
