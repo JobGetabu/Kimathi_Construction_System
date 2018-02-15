@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="ConstuctionModel.Store" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="ConstuctionModel.Store" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Employee">
           <Key>
             <PropertyRef Name="Id" />
@@ -34,6 +34,12 @@
           <Property Name="AmountOut" Type="int" />
           <Property Name="Quantity" Type="int" />
         </EntityType>
+        <EntityType Name="test">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
         <EntityType Name="Work">
           <Key>
             <PropertyRef Name="Id" />
@@ -60,14 +66,14 @@
           <EntitySet Name="Employee" EntityType="Self.Employee" store:Type="Tables" />
           <EntitySet Name="login" EntityType="Self.login" store:Type="Tables" />
           <EntitySet Name="Stock" EntityType="Self.Stock" store:Type="Tables" />
+          <EntitySet Name="test" EntityType="Self.test" store:Type="Tables" />
           <EntitySet Name="Work" EntityType="Self.Work" store:Type="Tables" />
           <AssociationSet Name="Empl_Fk" Association="Self.Empl_Fk">
             <End Role="Employee" EntitySet="Employee" />
             <End Role="Work" EntitySet="Work" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="ConstuctionModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -133,7 +139,14 @@
             <End Role="Employee" EntitySet="Employees" />
             <End Role="Work" EntitySet="Works" />
           </AssociationSet>
+          <EntitySet Name="tests" EntityType="ConstuctionModel.test" />
         </EntityContainer>
+        <EntityType Name="test">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -178,6 +191,13 @@
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="TimeIn" ColumnName="TimeIn" />
                 <ScalarProperty Name="TimeOut" ColumnName="TimeOut" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tests">
+            <EntityTypeMapping TypeName="ConstuctionModel.test">
+              <MappingFragment StoreEntitySet="test">
+                <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

@@ -59,5 +59,17 @@ namespace Kimathi_Construction
             toolTip1.ShowAlways = true;
             toolTip1.SetToolTip(ctl, message);
         }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            using (var context = new kimathiEntities())
+            {
+                context.Database.Connection.Open();
+                if (context.Database.Connection.State == ConnectionState.Open)
+                {
+                    MessageBox.Show("Connected");
+                }
+            }
+        }
     }
 }

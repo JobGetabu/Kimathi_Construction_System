@@ -16,7 +16,7 @@ namespace Kimathi_Construction
     public partial class kimathiEntities : DbContext
     {
         public kimathiEntities()
-            : base("name=kimathiEntities")
+            : base("name=KimathiEntities")
         {
         }
     
@@ -29,5 +29,6 @@ namespace Kimathi_Construction
         public DbSet<login> logins { get; set; }
         public DbSet<Stock> Stocks { get; set; }
         public DbSet<Work> Works { get; set; }
+        public DbSet<test> tests { get; set; }
     }
 }
