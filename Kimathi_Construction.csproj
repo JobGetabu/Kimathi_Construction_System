@@ -147,9 +147,6 @@
     <Compile Include="StockUI.Designer.cs">
       <DependentUpon>StockUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="test.cs">
-      <DependentUpon>KimathiModel.tt</DependentUpon>
-    </Compile>
     <Compile Include="Work.cs">
       <DependentUpon>KimathiModel.tt</DependentUpon>
     </Compile>

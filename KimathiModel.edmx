@@ -10,7 +10,7 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="IdNum" Type="int" Nullable="false" />
+          <Property Name="IdNum" Type="bigint" Nullable="false" />
           <Property Name="Name" Type="nvarchar" MaxLength="100" />
           <Property Name="Department" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="TypeOfEmployee" Type="nvarchar" MaxLength="100" />
@@ -33,12 +33,6 @@
           <Property Name="AmountIn" Type="int" />
           <Property Name="AmountOut" Type="int" />
           <Property Name="Quantity" Type="int" />
-        </EntityType>
-        <EntityType Name="test">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="Work">
           <Key>
@@ -66,7 +60,6 @@
           <EntitySet Name="Employee" EntityType="Self.Employee" store:Type="Tables" />
           <EntitySet Name="login" EntityType="Self.login" store:Type="Tables" />
           <EntitySet Name="Stock" EntityType="Self.Stock" store:Type="Tables" />
-          <EntitySet Name="test" EntityType="Self.test" store:Type="Tables" />
           <EntitySet Name="Work" EntityType="Self.Work" store:Type="Tables" />
           <AssociationSet Name="Empl_Fk" Association="Self.Empl_Fk">
             <End Role="Employee" EntitySet="Employee" />
@@ -139,14 +132,7 @@
             <End Role="Employee" EntitySet="Employees" />
             <End Role="Work" EntitySet="Works" />
           </AssociationSet>
-          <EntitySet Name="tests" EntityType="ConstuctionModel.test" />
         </EntityContainer>
-        <EntityType Name="test">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -191,13 +177,6 @@
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="TimeIn" ColumnName="TimeIn" />
                 <ScalarProperty Name="TimeOut" ColumnName="TimeOut" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="tests">
-            <EntityTypeMapping TypeName="ConstuctionModel.test">
-              <MappingFragment StoreEntitySet="test">
-                <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
