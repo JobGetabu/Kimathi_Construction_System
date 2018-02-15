@@ -11,4 +11,12 @@ in the construction site.
 
 ![screenshot 424](https://user-images.githubusercontent.com/22516895/36278170-0423c93c-12a4-11e8-9799-1b2b629e6517.png)
 
+### Animation Effects
+### LiveChart Analysis
+### Windows Notification
+### Input Validation
+### Portable Database
+### Setup Bootstrap
+### Installation 
+
 [Medium article for tutorial](https://medium.com/@getabujob)
