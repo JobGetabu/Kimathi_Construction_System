@@ -16,6 +16,7 @@ namespace Kimathi_Construction
     {
         public int Id { get; set; }
         public Nullable<System.DateTime> TimeIn { get; set; }
+        public long IdNum_fk { get; set; }
         public Nullable<System.DateTime> TimeOut { get; set; }
     
         public virtual Employee Employee { get; set; }

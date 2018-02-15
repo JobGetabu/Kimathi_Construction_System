@@ -13,10 +13,10 @@ namespace Kimathi_Construction
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class kimathiEntities : DbContext
+    public partial class KimathiEntities : DbContext
     {
-        public kimathiEntities()
-            : base("name=kimathiEntities")
+        public KimathiEntities()
+            : base("name=KimathiEntities")
         {
         }
     

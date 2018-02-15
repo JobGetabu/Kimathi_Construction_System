@@ -51,11 +51,11 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.tbDateOut = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.tbDateIn = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.lblDate = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.btnSave = new System.Windows.Forms.Button();
+            this.dTimePickerIn = new System.Windows.Forms.DateTimePicker();
+            this.dTimePickerOut = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -322,21 +322,21 @@
             // 
             this.lblVerificationReport.AutoSize = true;
             this.lblVerificationReport.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVerificationReport.ForeColor = System.Drawing.Color.Black;
+            this.lblVerificationReport.ForeColor = System.Drawing.Color.Crimson;
             this.lblVerificationReport.Location = new System.Drawing.Point(38, 33);
             this.lblVerificationReport.Name = "lblVerificationReport";
-            this.lblVerificationReport.Size = new System.Drawing.Size(110, 17);
+            this.lblVerificationReport.Size = new System.Drawing.Size(135, 17);
             this.lblVerificationReport.TabIndex = 8;
-            this.lblVerificationReport.Text = "Employee Found";
+            this.lblVerificationReport.Text = "Employee not Found";
             // 
             // groupBox4
             // 
+            this.groupBox4.Controls.Add(this.dTimePickerOut);
+            this.groupBox4.Controls.Add(this.dTimePickerIn);
             this.groupBox4.Controls.Add(this.btnSave);
             this.groupBox4.Controls.Add(this.lblDate);
             this.groupBox4.Controls.Add(this.bunifuCustomLabel9);
-            this.groupBox4.Controls.Add(this.tbDateOut);
             this.groupBox4.Controls.Add(this.bunifuCustomLabel10);
-            this.groupBox4.Controls.Add(this.tbDateIn);
             this.groupBox4.Controls.Add(this.bunifuCustomLabel8);
             this.groupBox4.Font = new System.Drawing.Font("Nasalization Rg", 9.749999F, System.Drawing.FontStyle.Bold);
             this.groupBox4.Location = new System.Drawing.Point(714, 134);
@@ -362,28 +362,11 @@
             this.bunifuCustomLabel9.AutoSize = true;
             this.bunifuCustomLabel9.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.bunifuCustomLabel9.ForeColor = System.Drawing.Color.Black;
-            this.bunifuCustomLabel9.Location = new System.Drawing.Point(28, 126);
+            this.bunifuCustomLabel9.Location = new System.Drawing.Point(28, 131);
             this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
             this.bunifuCustomLabel9.Size = new System.Drawing.Size(63, 17);
             this.bunifuCustomLabel9.TabIndex = 12;
             this.bunifuCustomLabel9.Text = "Time out";
-            // 
-            // tbDateOut
-            // 
-            this.tbDateOut.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(195)))), ((int)(((byte)(171)))));
-            this.tbDateOut.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(129)))), ((int)(((byte)(218)))));
-            this.tbDateOut.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(195)))), ((int)(((byte)(171)))));
-            this.tbDateOut.BorderThickness = 1;
-            this.tbDateOut.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbDateOut.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.tbDateOut.ForeColor = System.Drawing.Color.Black;
-            this.tbDateOut.isPassword = false;
-            this.tbDateOut.Location = new System.Drawing.Point(14, 154);
-            this.tbDateOut.Margin = new System.Windows.Forms.Padding(4);
-            this.tbDateOut.Name = "tbDateOut";
-            this.tbDateOut.Size = new System.Drawing.Size(185, 25);
-            this.tbDateOut.TabIndex = 11;
-            this.tbDateOut.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bunifuCustomLabel10
             // 
@@ -395,23 +378,6 @@
             this.bunifuCustomLabel10.Size = new System.Drawing.Size(52, 17);
             this.bunifuCustomLabel10.TabIndex = 10;
             this.bunifuCustomLabel10.Text = "Time In";
-            // 
-            // tbDateIn
-            // 
-            this.tbDateIn.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(195)))), ((int)(((byte)(171)))));
-            this.tbDateIn.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(129)))), ((int)(((byte)(218)))));
-            this.tbDateIn.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(195)))), ((int)(((byte)(171)))));
-            this.tbDateIn.BorderThickness = 1;
-            this.tbDateIn.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tbDateIn.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.tbDateIn.ForeColor = System.Drawing.Color.Black;
-            this.tbDateIn.isPassword = false;
-            this.tbDateIn.Location = new System.Drawing.Point(14, 93);
-            this.tbDateIn.Margin = new System.Windows.Forms.Padding(4);
-            this.tbDateIn.Name = "tbDateIn";
-            this.tbDateIn.Size = new System.Drawing.Size(185, 25);
-            this.tbDateIn.TabIndex = 9;
-            this.tbDateIn.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // lblDate
             // 
@@ -441,6 +407,24 @@
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // dTimePickerIn
+            // 
+            this.dTimePickerIn.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dTimePickerIn.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dTimePickerIn.Location = new System.Drawing.Point(21, 92);
+            this.dTimePickerIn.Name = "dTimePickerIn";
+            this.dTimePickerIn.Size = new System.Drawing.Size(178, 21);
+            this.dTimePickerIn.TabIndex = 15;
+            // 
+            // dTimePickerOut
+            // 
+            this.dTimePickerOut.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dTimePickerOut.Format = System.Windows.Forms.DateTimePickerFormat.Time;
+            this.dTimePickerOut.Location = new System.Drawing.Point(21, 163);
+            this.dTimePickerOut.Name = "dTimePickerOut";
+            this.dTimePickerOut.Size = new System.Drawing.Size(178, 21);
+            this.dTimePickerOut.TabIndex = 16;
             // 
             // EmployeeUI
             // 
@@ -496,9 +480,9 @@
         private System.Windows.Forms.Button btnSave;
         private Bunifu.Framework.UI.BunifuCustomLabel lblDate;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel9;
-        private Bunifu.Framework.UI.BunifuMetroTextbox tbDateOut;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel10;
-        private Bunifu.Framework.UI.BunifuMetroTextbox tbDateIn;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel8;
+        private System.Windows.Forms.DateTimePicker dTimePickerOut;
+        private System.Windows.Forms.DateTimePicker dTimePickerIn;
     }
 }

@@ -14,12 +14,16 @@ namespace Kimathi_Construction
     
     public partial class Employee
     {
-        public int Id { get; set; }
-        public int IdNum { get; set; }
+        public Employee()
+        {
+            this.Works = new HashSet<Work>();
+        }
+    
+        public long IdNum { get; set; }
         public string Name { get; set; }
         public string Department { get; set; }
         public string TypeOfEmployee { get; set; }
     
-        public virtual Work Work { get; set; }
+        public virtual ICollection<Work> Works { get; set; }
     }
 }

@@ -4,12 +4,12 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="066d28e4ee4545e5afab13a80ee6e122" Name="Diagram1">
-        <EntityTypeShape EntityType="ConstuctionModel.Employee" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="ConstuctionModel.login" Width="1.5" PointX="6.875" PointY="1.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="ConstuctionModel.Stock" Width="1.5" PointX="5" PointY="1.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="ConstuctionModel.Work" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
-        <AssociationConnector Association="ConstuctionModel.Empl_Fk" ManuallyRouted="false" />
+      <Diagram DiagramId="a4ddcd453c00419d9ae99026e4b73791" Name="Diagram1">
+        <EntityTypeShape EntityType="ConstructionModel.Employee" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConstructionModel.login" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConstructionModel.Stock" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConstructionModel.Work" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <AssociationConnector Association="ConstructionModel.Empl_Fk" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
