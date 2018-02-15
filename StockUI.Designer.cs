@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StockUI));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.owner = new Bunifu.Framework.UI.BunifuCustomLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -39,26 +40,43 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(906, 75);
+            this.pictureBox1.Size = new System.Drawing.Size(976, 75);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
+            // 
+            // owner
+            // 
+            this.owner.AutoSize = true;
+            this.owner.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.owner.Font = new System.Drawing.Font("Nasalization Rg", 5.749999F, System.Drawing.FontStyle.Bold);
+            this.owner.ForeColor = System.Drawing.Color.Black;
+            this.owner.Location = new System.Drawing.Point(829, 479);
+            this.owner.Name = "owner";
+            this.owner.Size = new System.Drawing.Size(73, 9);
+            this.owner.TabIndex = 10;
+            this.owner.Text = "@Job_Getabu";
+            this.owner.Click += new System.EventHandler(this.owner_Click);
             // 
             // StockUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.owner);
             this.Controls.Add(this.pictureBox1);
             this.Name = "StockUI";
-            this.Size = new System.Drawing.Size(906, 492);
+            this.Size = new System.Drawing.Size(976, 492);
+            this.Load += new System.EventHandler(this.StockUI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Bunifu.Framework.UI.BunifuCustomLabel owner;
     }
 }

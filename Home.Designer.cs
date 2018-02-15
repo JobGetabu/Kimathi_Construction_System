@@ -37,7 +37,8 @@
             this.tab2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.tab1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.container = new System.Windows.Forms.Panel();
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.containerUIs = new System.Windows.Forms.Panel();
             this.bGradientPanelHome.SuspendLayout();
             this.panelSwitch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
@@ -52,7 +53,7 @@
             // 
             this.bGradientPanelHome.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bGradientPanelHome.BackgroundImage")));
             this.bGradientPanelHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bGradientPanelHome.Controls.Add(this.container);
+            this.bGradientPanelHome.Controls.Add(this.containerUIs);
             this.bGradientPanelHome.Controls.Add(this.panelSwitch);
             this.bGradientPanelHome.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bGradientPanelHome.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(40)))), ((int)(((byte)(114)))));
@@ -62,7 +63,7 @@
             this.bGradientPanelHome.Location = new System.Drawing.Point(0, 0);
             this.bGradientPanelHome.Name = "bGradientPanelHome";
             this.bGradientPanelHome.Quality = 10;
-            this.bGradientPanelHome.Size = new System.Drawing.Size(906, 528);
+            this.bGradientPanelHome.Size = new System.Drawing.Size(976, 528);
             this.bGradientPanelHome.TabIndex = 0;
             // 
             // panelSwitch
@@ -75,7 +76,7 @@
             this.panelSwitch.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSwitch.Location = new System.Drawing.Point(0, 0);
             this.panelSwitch.Name = "panelSwitch";
-            this.panelSwitch.Size = new System.Drawing.Size(906, 36);
+            this.panelSwitch.Size = new System.Drawing.Size(976, 36);
             this.panelSwitch.TabIndex = 2;
             // 
             // btnExit
@@ -103,6 +104,7 @@
             this.tab2.Size = new System.Drawing.Size(51, 15);
             this.tab2.TabIndex = 3;
             this.tab2.Text = "Stock";
+            this.tab2.Click += new System.EventHandler(this.tab2_Click);
             // 
             // tab1
             // 
@@ -115,6 +117,7 @@
             this.tab1.Size = new System.Drawing.Size(82, 15);
             this.tab1.TabIndex = 1;
             this.tab1.Text = "Employee";
+            this.tab1.Click += new System.EventHandler(this.tab1_Click);
             // 
             // bunifuSeparator1
             // 
@@ -128,25 +131,33 @@
             this.bunifuSeparator1.Transparency = 255;
             this.bunifuSeparator1.Vertical = false;
             // 
-            // container
+            // bunifuDragControl1
             // 
-            this.container.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.container.Location = new System.Drawing.Point(0, 36);
-            this.container.Name = "container";
-            this.container.Size = new System.Drawing.Size(906, 492);
-            this.container.TabIndex = 3;
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.panelSwitch;
+            this.bunifuDragControl1.Vertical = true;
+            // 
+            // containerUIs
+            // 
+            this.containerUIs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.containerUIs.Location = new System.Drawing.Point(0, 36);
+            this.containerUIs.Name = "containerUIs";
+            this.containerUIs.Size = new System.Drawing.Size(976, 492);
+            this.containerUIs.TabIndex = 3;
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.ClientSize = new System.Drawing.Size(906, 528);
+            this.ClientSize = new System.Drawing.Size(976, 528);
             this.Controls.Add(this.bGradientPanelHome);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
+            this.Load += new System.EventHandler(this.Home_Load);
             this.bGradientPanelHome.ResumeLayout(false);
             this.panelSwitch.ResumeLayout(false);
             this.panelSwitch.PerformLayout();
@@ -164,7 +175,8 @@
         private Bunifu.Framework.UI.BunifuCustomLabel tab1;
         private Bunifu.Framework.UI.BunifuSeparator bunifuSeparator1;
         private Bunifu.Framework.UI.BunifuImageButton btnExit;
-        private System.Windows.Forms.Panel container;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
+        private System.Windows.Forms.Panel containerUIs;
     }
 }
 
