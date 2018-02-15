@@ -86,6 +86,12 @@
     <Compile Include="Employee.cs">
       <DependentUpon>KimathiModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="EmployeeUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EmployeeUI.Designer.cs">
+      <DependentUpon>EmployeeUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,12 +118,26 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Res.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Res.resx</DependentUpon>
+    </Compile>
     <Compile Include="Stock.cs">
       <DependentUpon>KimathiModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="StockUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StockUI.Designer.cs">
+      <DependentUpon>StockUI.cs</DependentUpon>
     </Compile>
     <Compile Include="Work.cs">
       <DependentUpon>KimathiModel.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="EmployeeUI.resx">
+      <DependentUpon>EmployeeUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
@@ -130,6 +150,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Res.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Res.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StockUI.resx">
+      <DependentUpon>StockUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EntityDeploy Include="KimathiModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>KimathiModel.Designer.cs</LastGenOutput>
@@ -165,6 +192,17 @@
       <DependentUpon>KimathiModel.edmx</DependentUpon>
       <LastGenOutput>KimathiModel.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\1pending.png" />
+    <None Include="Resources\1paid.png" />
+    <None Include="Resources\Xbox Menu_48px.png" />
+    <None Include="Resources\Trash_48px.png" />
+    <None Include="Resources\Moni.png" />
+    <None Include="Resources\Back_52px.png" />
+    <None Include="Resources\Back_50px.png" />
+    <None Include="Resources\AChecked64px.png" />
+    <None Include="Resources\Accounting_50px.png" />
+    <None Include="Resources\AAChecked_50px.png" />
+    <None Include="Resources\AccountsUI.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

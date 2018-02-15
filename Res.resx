@@ -117,50 +117,35 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="bunifuElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>47</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="bGradientPanelHome.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAArSURBVChTjcgxDQAACAMw5KAP/8kQQA+OPq3qyQtTmMIU
-        pjCFKUxhCvOYLFUhn8XcMTBCAAAAAElFTkSuQmCC
-</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AAChecked_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AAChecked_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btnExit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAApBJREFUWEft
-        lsuKE0EUhjM7L7hS8IaoiCK+gbgJ6YsujJdMdycjTKaqHeJtIYOiiODaFxBcKiIOOop4QX0ScSHiCzjD
-        XDPRcfxP9e8iJpXpTmdnPii6+6//nDrdXV1dhSFDsuDV4j08NbihXpfGS8O/noFwstLY7QT6CQZrUTJ0
-        KwDXq26kHxdDtYtSPtxAVZB0loM1KRuodRZg9PiHG+izlPvDi+JrSLaWJFQzpcrF/ewyJHp7AeJxQv2K
-        fb/w5C6xKxtOpM4hgQz+G4/0JuU2OEhbAX/xInXbxCKHH6ky5XTIO0fgnCT3gvgG5Q6kXxovO8Dd36Jn
-        1hmb3El5YzjhJHCaUlfosRYgeKF+IR4v0I8o9cav6X0I+Im2IueUu5KmAJkT8MjEbKX6RPnuJPFTSlbo
-        61mAAM+08VrmUhswvhezF6iQkhWTNEUB+Cqq4sPxDSU7MH4X86maOkDJStoCStWJQyzgGyU7MC6L+XgY
-        bqZkJW0B5XJjC71LlOzAtCBmf3x8K6XcnDgTb2MB85TsYAn9ImanWj9CKTf+qDrKAj5TsoMCPpgCMHEo
-        5QbL+IWkAPWOkh2u/+s4PqOUGzeKnzPnZUp2SmF9L8yyEK3K7KXcN96oOoxcLWmyxFPujRfph1Ix2mtc
-        jiRqX4wgx1uTK4ofUNsYWTIRNM8i7lLODP4D95hjLvMGRTYTCDS/Y/yc7lBOjRQusZID8acpZwNr9xST
-        yAyeSbM6+uHkQfhfJjF6zQvVdXb1B7dki0zYlK/DDeI6PtNjRaU2yYop506kJ9AvP50mvQuyqWGafBTH
-        Gjsw6H0kXWHyXm1ZvM75+naGD45kd6yu4nV8wkBf0eRupcn5R7QrA9sND/lPKBT+ANJXW2dlDZpwAAAA
-        AElFTkSuQmCC
-</value>
+  <data name="Accounting_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Accounting_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="btnExit.ImageActive" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAiFJREFUWEft
-        lstqFEEARcedUVwpaCKiEhTxW5QEQQIudOlrIaIoEnDtDwguFZEEX4hR1C8RFyL+gEp8xfiI5zYnhJip
-        nunp2TmHutB969btDtOp7s6IEU1Y6XQmPKzgfCXytOLfzFCgdBzdRctaFZx3u4Ef6A7apdUOio6hjygX
-        W9Ku0GOswUluIP4HNKU9GBScR78tfIj2OlWhz1gjGfTYuV/otFPNYOE0ysX/oMva68DfcAOrYF5FWZuO
-        o9r9wYL85p9QLnBJewPOM7rDxBUz+Ql3aveGcB64LJzX6ooZRhkmH5i7rVUPwT3oJ/qeY+2uMN/PDeSZ
-        yIO5jHr/ixLKb5fie1pFzDHqITBvtuuztA5Czw0f1ypijlEPgRmzT7XKEHpveJ9WEXOMeghMmn2nVYbQ
-        N8NjWkXMMeohsMXsV60yhD4b3qrVGrq22bmoVYbQG8MHtVpD1yE7X2uVIfTC8IxWa+g6YeczrTKEsv8n
-        PKfVGrru23lGqwyh3SgbUTaPSe2BoeMAyiYUjWvXQ/AWyh0/QZu0G5O1aMGum9q9ITyBFl04q90Y1l63
-        Iy+2Zh8oLJhCq6/ja9p9w5pZ16bjiHYzWHjRkvwV+SDpZ3fcjx65Jhe/4NRgUJBPsi8WLqE5dBIdRpvR
-        mMenUF46ySSbDW3amnZQtAPdQHlFp7xO2cqT3e7y4UFpvpTOoVfoLcpfG+X4JTqLhvM1POI/odP5C7Wz
-        YYEheyCAAAAAAElFTkSuQmCC
-</value>
+  <data name="AChecked64px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\AChecked64px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back_50px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Back_50px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Back_52px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Back_52px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Moni" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Moni.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Trash_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Trash_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Xbox_Menu_48px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\Xbox Menu_48px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1paid" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\1paid.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1pending" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\1pending.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
