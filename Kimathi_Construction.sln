@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kimathi_Construction", "Kimathi_Construction.csproj", "{BC69392F-937C-4C82-96C7-A6FCC8CEF602}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "custom_alert_notifications", "..\important nugets\Beautiful-Winform-Notifications---winforms\custom_alert_notifications\custom_alert_notifications.csproj", "{C6009A3F-00EE-45D4-9944-D80400ECD12C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BC69392F-937C-4C82-96C7-A6FCC8CEF602}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC69392F-937C-4C82-96C7-A6FCC8CEF602}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC69392F-937C-4C82-96C7-A6FCC8CEF602}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6009A3F-00EE-45D4-9944-D80400ECD12C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6009A3F-00EE-45D4-9944-D80400ECD12C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6009A3F-00EE-45D4-9944-D80400ECD12C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6009A3F-00EE-45D4-9944-D80400ECD12C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
