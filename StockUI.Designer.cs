@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(StockUI));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.owner = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.bunifuCustomLabel4 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -56,23 +55,13 @@
             this.bunifuCustomLabel13 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel14 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel15 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(976, 75);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
             // 
             // owner
             // 
@@ -96,7 +85,7 @@
             this.groupBox1.Controls.Add(this.bunifuCustomLabel2);
             this.groupBox1.Controls.Add(this.tbFullName);
             this.groupBox1.Font = new System.Drawing.Font("Nasalization Rg", 9.749999F, System.Drawing.FontStyle.Bold);
-            this.groupBox1.Location = new System.Drawing.Point(36, 106);
+            this.groupBox1.Location = new System.Drawing.Point(51, 98);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(258, 274);
             this.groupBox1.TabIndex = 11;
@@ -190,7 +179,7 @@
             this.groupBox2.Controls.Add(this.bunifuCustomLabel8);
             this.groupBox2.Controls.Add(this.bunifuMetroTextbox2);
             this.groupBox2.Font = new System.Drawing.Font("Nasalization Rg", 9.749999F, System.Drawing.FontStyle.Bold);
-            this.groupBox2.Location = new System.Drawing.Point(300, 106);
+            this.groupBox2.Location = new System.Drawing.Point(339, 98);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(258, 274);
             this.groupBox2.TabIndex = 12;
@@ -284,7 +273,7 @@
             this.groupBox3.Controls.Add(this.bunifuCustomLabel12);
             this.groupBox3.Controls.Add(this.bunifuMetroTextbox4);
             this.groupBox3.Font = new System.Drawing.Font("Nasalization Rg", 9.749999F, System.Drawing.FontStyle.Bold);
-            this.groupBox3.Location = new System.Drawing.Point(579, 106);
+            this.groupBox3.Location = new System.Drawing.Point(638, 98);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(258, 274);
             this.groupBox3.TabIndex = 13;
@@ -375,9 +364,9 @@
             this.groupBox4.Controls.Add(this.bunifuCustomLabel14);
             this.groupBox4.Controls.Add(this.bunifuCustomLabel13);
             this.groupBox4.Font = new System.Drawing.Font("Nasalization Rg", 9.749999F, System.Drawing.FontStyle.Bold);
-            this.groupBox4.Location = new System.Drawing.Point(36, 399);
+            this.groupBox4.Location = new System.Drawing.Point(33, 391);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(801, 77);
+            this.groupBox4.Size = new System.Drawing.Size(894, 77);
             this.groupBox4.TabIndex = 14;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Notifications";
@@ -387,7 +376,7 @@
             this.bunifuCustomLabel13.AutoSize = true;
             this.bunifuCustomLabel13.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.bunifuCustomLabel13.ForeColor = System.Drawing.Color.Black;
-            this.bunifuCustomLabel13.Location = new System.Drawing.Point(50, 33);
+            this.bunifuCustomLabel13.Location = new System.Drawing.Point(51, 33);
             this.bunifuCustomLabel13.Name = "bunifuCustomLabel13";
             this.bunifuCustomLabel13.Size = new System.Drawing.Size(92, 17);
             this.bunifuCustomLabel13.TabIndex = 7;
@@ -398,7 +387,7 @@
             this.bunifuCustomLabel14.AutoSize = true;
             this.bunifuCustomLabel14.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.bunifuCustomLabel14.ForeColor = System.Drawing.Color.Black;
-            this.bunifuCustomLabel14.Location = new System.Drawing.Point(297, 33);
+            this.bunifuCustomLabel14.Location = new System.Drawing.Point(339, 33);
             this.bunifuCustomLabel14.Name = "bunifuCustomLabel14";
             this.bunifuCustomLabel14.Size = new System.Drawing.Size(145, 17);
             this.bunifuCustomLabel14.TabIndex = 8;
@@ -409,11 +398,22 @@
             this.bunifuCustomLabel15.AutoSize = true;
             this.bunifuCustomLabel15.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.bunifuCustomLabel15.ForeColor = System.Drawing.Color.Black;
-            this.bunifuCustomLabel15.Location = new System.Drawing.Point(576, 33);
+            this.bunifuCustomLabel15.Location = new System.Drawing.Point(638, 33);
             this.bunifuCustomLabel15.Name = "bunifuCustomLabel15";
             this.bunifuCustomLabel15.Size = new System.Drawing.Size(72, 17);
             this.bunifuCustomLabel15.TabIndex = 9;
             this.bunifuCustomLabel15.Text = "Few Bricks";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(976, 75);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
             // 
             // StockUI
             // 
@@ -429,7 +429,6 @@
             this.Name = "StockUI";
             this.Size = new System.Drawing.Size(976, 492);
             this.Load += new System.EventHandler(this.StockUI_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -438,6 +437,7 @@
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
