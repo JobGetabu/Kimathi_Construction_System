@@ -91,7 +91,6 @@
             this.btnSave1.TabIndex = 19;
             this.btnSave1.Text = "Refresh";
             this.btnSave1.UseVisualStyleBackColor = false;
-            this.btnSave1.Visible = false;
             // 
             // dTimePickerIn
             // 
