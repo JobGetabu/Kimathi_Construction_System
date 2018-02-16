@@ -46,5 +46,18 @@ namespace Kimathi_Construction
             toolTip1.ShowAlways = true;
             toolTip1.SetToolTip(ctl, message);
         }
+
+        private void owner_Click(object sender, EventArgs e)
+        {
+            //UI code
+            SetToolTip(owner, "Follow at twitter @Job_Getabu ;)");
+            string fbPage = "https://twitter.com/job_getabu";
+            try
+            {
+                System.Diagnostics.ProcessStartInfo sInfo = new System.Diagnostics.ProcessStartInfo(fbPage);
+                System.Diagnostics.Process.Start(sInfo);
+            }
+            catch (Exception) { }
+        }
     }
 }

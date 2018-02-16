@@ -12,18 +12,18 @@ namespace Kimathi_Construction
 {
     public partial class PayrollUI : UserControl
     {
-    private static PayrollUI _instance;
-    public static PayrollUI Instance
-    {
-        get
+        private static PayrollUI _instance;
+        public static PayrollUI Instance
         {
-            if (_instance == null)
+            get
             {
-                _instance = new PayrollUI();
+                if (_instance == null)
+                {
+                    _instance = new PayrollUI();
+                }
+                return _instance;
             }
-            return _instance;
         }
-    }
         public PayrollUI()
         {
             InitializeComponent();
@@ -45,6 +45,21 @@ namespace Kimathi_Construction
             toolTip1.ReshowDelay = 500;
             toolTip1.ShowAlways = true;
             toolTip1.SetToolTip(ctl, message);
+        }
+
+        private void owner_Click(object sender, EventArgs e)
+        {
+
+            //UI code
+            SetToolTip(owner, "Follow at twitter @Job_Getabu ;)");
+            string fbPage = "https://twitter.com/job_getabu";
+            try
+            {
+                System.Diagnostics.ProcessStartInfo sInfo = new System.Diagnostics.ProcessStartInfo(fbPage);
+                System.Diagnostics.Process.Start(sInfo);
+            }
+            catch (Exception) { }
+
         }
     }
 }

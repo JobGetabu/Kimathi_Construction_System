@@ -56,6 +56,7 @@
             this.owner.Size = new System.Drawing.Size(73, 9);
             this.owner.TabIndex = 11;
             this.owner.Text = "@Job_Getabu";
+            this.owner.Click += new System.EventHandler(this.owner_Click);
             // 
             // StatsUI
             // 
