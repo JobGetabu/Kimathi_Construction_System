@@ -230,6 +230,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Microsoft.VC90.CRT\README_ENU.txt" />
+    <None Include="Resources\Trash Can_50px.png" />
+    <None Include="Resources\ok80.png" />
     <Content Include="sqlceca40.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

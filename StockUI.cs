@@ -417,7 +417,7 @@ namespace Kimathi_Construction
                     if (int.Parse(tbbrickreg.Text) == temp3.FirstOrDefault().AmountIn)
                     {
                         temp3.FirstOrDefault().AmountOut += int.Parse(tbbrickused.Text);
-                        temp3.FirstOrDefault().Quantity = temp2.FirstOrDefault().AmountIn - temp3.FirstOrDefault().AmountOut;
+                        temp3.FirstOrDefault().Quantity = temp3.FirstOrDefault().AmountIn - temp3.FirstOrDefault().AmountOut;
 
                         try
                         {
@@ -440,7 +440,7 @@ namespace Kimathi_Construction
 
                         try
                         {
-                            context.Entry<Stock>(temp2.FirstOrDefault()).State = EntityState.Modified;
+                            context.Entry<Stock>(temp3.FirstOrDefault()).State = EntityState.Modified;
                             context.SaveChanges();
                             alert.Show("Updated !", alert.AlertType.success);
                             LoadUpGui();
