@@ -39,6 +39,8 @@
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.containerUIs = new System.Windows.Forms.Panel();
+            this.tab3 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.tab4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bGradientPanelHome.SuspendLayout();
             this.panelSwitch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
@@ -69,6 +71,8 @@
             // panelSwitch
             // 
             this.panelSwitch.BackColor = System.Drawing.Color.Transparent;
+            this.panelSwitch.Controls.Add(this.tab4);
+            this.panelSwitch.Controls.Add(this.tab3);
             this.panelSwitch.Controls.Add(this.btnExit);
             this.panelSwitch.Controls.Add(this.tab2);
             this.panelSwitch.Controls.Add(this.tab1);
@@ -146,6 +150,30 @@
             this.containerUIs.Size = new System.Drawing.Size(976, 492);
             this.containerUIs.TabIndex = 3;
             // 
+            // tab3
+            // 
+            this.tab3.AutoSize = true;
+            this.tab3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tab3.Font = new System.Drawing.Font("Nasalization Rg", 9.749999F, System.Drawing.FontStyle.Bold);
+            this.tab3.ForeColor = System.Drawing.Color.White;
+            this.tab3.Location = new System.Drawing.Point(217, 10);
+            this.tab3.Name = "tab3";
+            this.tab3.Size = new System.Drawing.Size(60, 15);
+            this.tab3.TabIndex = 67;
+            this.tab3.Text = "Payroll";
+            // 
+            // tab4
+            // 
+            this.tab4.AutoSize = true;
+            this.tab4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tab4.Font = new System.Drawing.Font("Nasalization Rg", 9.749999F, System.Drawing.FontStyle.Bold);
+            this.tab4.ForeColor = System.Drawing.Color.White;
+            this.tab4.Location = new System.Drawing.Point(312, 10);
+            this.tab4.Name = "tab4";
+            this.tab4.Size = new System.Drawing.Size(48, 15);
+            this.tab4.TabIndex = 68;
+            this.tab4.Text = "Stats";
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -177,6 +205,8 @@
         private Bunifu.Framework.UI.BunifuImageButton btnExit;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private System.Windows.Forms.Panel containerUIs;
+        private Bunifu.Framework.UI.BunifuCustomLabel tab4;
+        private Bunifu.Framework.UI.BunifuCustomLabel tab3;
     }
 }
 

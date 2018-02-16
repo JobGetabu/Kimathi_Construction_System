@@ -131,12 +131,24 @@
     <Compile Include="login.cs">
       <DependentUpon>KimathiModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="PayrollUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PayrollUI.Designer.cs">
+      <DependentUpon>PayrollUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Res.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Res.resx</DependentUpon>
+    </Compile>
+    <Compile Include="StatsUI.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="StatsUI.Designer.cs">
+      <DependentUpon>StatsUI.cs</DependentUpon>
     </Compile>
     <Compile Include="Stock.cs">
       <DependentUpon>KimathiModel.tt</DependentUpon>
