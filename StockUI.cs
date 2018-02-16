@@ -69,8 +69,11 @@ namespace Kimathi_Construction
                 lblBricks.Text = temp3.FirstOrDefault().Quantity.ToString() + " pieces";
 
                 btnSave1.Visible = false;
+                lbltu.Visible = true;
                 btnSave2.Visible = false;
+                lbltu2.Visible = true;
                 btnSave3.Visible = false;
+                lbltu3.Visible = true;
             }
         }
 
