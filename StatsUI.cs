@@ -12,6 +12,18 @@ namespace Kimathi_Construction
 {
     public partial class StatsUI : UserControl
     {
+    private static StatsUI _instance;
+    public static StatsUI Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = new StatsUI();
+            }
+            return _instance;
+        }
+    }
         public StatsUI()
         {
             InitializeComponent();

@@ -138,5 +138,25 @@ namespace Kimathi_Construction
             tab1_Click(sender, e);
             
         }
+
+        private void tab3_Click(object sender, EventArgs e)
+        {
+            //UI code
+            bunifuSeparator1.Width = tab3.Width;
+            bunifuSeparator1.Left = tab3.Left;
+
+            //Show FeePayment
+            TabSwitcher(PayrollUI.Instance);
+        }
+
+        private void tab4_Click(object sender, EventArgs e)
+        {
+            //UI code
+            bunifuSeparator1.Width = tab4.Width;
+            bunifuSeparator1.Left = tab4.Left;
+
+            //Show FeePayment
+            TabSwitcher(StatsUI.Instance);
+        }
     }
 }

@@ -31,16 +31,16 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bGradientPanelHome = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.containerUIs = new System.Windows.Forms.Panel();
             this.panelSwitch = new System.Windows.Forms.Panel();
+            this.tab4 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.tab3 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.btnExit = new Bunifu.Framework.UI.BunifuImageButton();
             this.tab2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.tab1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.containerUIs = new System.Windows.Forms.Panel();
-            this.tab3 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.tab4 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bGradientPanelHome.SuspendLayout();
             this.panelSwitch.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnExit)).BeginInit();
@@ -50,6 +50,13 @@
             // 
             this.bunifuElipse1.ElipseRadius = 7;
             this.bunifuElipse1.TargetControl = this;
+            // 
+            // bunifuDragControl1
+            // 
+            this.bunifuDragControl1.Fixed = true;
+            this.bunifuDragControl1.Horizontal = true;
+            this.bunifuDragControl1.TargetControl = this.panelSwitch;
+            this.bunifuDragControl1.Vertical = true;
             // 
             // bGradientPanelHome
             // 
@@ -68,6 +75,14 @@
             this.bGradientPanelHome.Size = new System.Drawing.Size(976, 528);
             this.bGradientPanelHome.TabIndex = 0;
             // 
+            // containerUIs
+            // 
+            this.containerUIs.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.containerUIs.Location = new System.Drawing.Point(0, 36);
+            this.containerUIs.Name = "containerUIs";
+            this.containerUIs.Size = new System.Drawing.Size(976, 492);
+            this.containerUIs.TabIndex = 3;
+            // 
             // panelSwitch
             // 
             this.panelSwitch.BackColor = System.Drawing.Color.Transparent;
@@ -82,6 +97,32 @@
             this.panelSwitch.Name = "panelSwitch";
             this.panelSwitch.Size = new System.Drawing.Size(976, 36);
             this.panelSwitch.TabIndex = 2;
+            // 
+            // tab4
+            // 
+            this.tab4.AutoSize = true;
+            this.tab4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tab4.Font = new System.Drawing.Font("Nasalization Rg", 9.749999F, System.Drawing.FontStyle.Bold);
+            this.tab4.ForeColor = System.Drawing.Color.White;
+            this.tab4.Location = new System.Drawing.Point(312, 10);
+            this.tab4.Name = "tab4";
+            this.tab4.Size = new System.Drawing.Size(48, 15);
+            this.tab4.TabIndex = 68;
+            this.tab4.Text = "Stats";
+            this.tab4.Click += new System.EventHandler(this.tab4_Click);
+            // 
+            // tab3
+            // 
+            this.tab3.AutoSize = true;
+            this.tab3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tab3.Font = new System.Drawing.Font("Nasalization Rg", 9.749999F, System.Drawing.FontStyle.Bold);
+            this.tab3.ForeColor = System.Drawing.Color.White;
+            this.tab3.Location = new System.Drawing.Point(217, 10);
+            this.tab3.Name = "tab3";
+            this.tab3.Size = new System.Drawing.Size(60, 15);
+            this.tab3.TabIndex = 67;
+            this.tab3.Text = "Payroll";
+            this.tab3.Click += new System.EventHandler(this.tab3_Click);
             // 
             // btnExit
             // 
@@ -134,45 +175,6 @@
             this.bunifuSeparator1.TabIndex = 0;
             this.bunifuSeparator1.Transparency = 255;
             this.bunifuSeparator1.Vertical = false;
-            // 
-            // bunifuDragControl1
-            // 
-            this.bunifuDragControl1.Fixed = true;
-            this.bunifuDragControl1.Horizontal = true;
-            this.bunifuDragControl1.TargetControl = this.panelSwitch;
-            this.bunifuDragControl1.Vertical = true;
-            // 
-            // containerUIs
-            // 
-            this.containerUIs.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.containerUIs.Location = new System.Drawing.Point(0, 36);
-            this.containerUIs.Name = "containerUIs";
-            this.containerUIs.Size = new System.Drawing.Size(976, 492);
-            this.containerUIs.TabIndex = 3;
-            // 
-            // tab3
-            // 
-            this.tab3.AutoSize = true;
-            this.tab3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tab3.Font = new System.Drawing.Font("Nasalization Rg", 9.749999F, System.Drawing.FontStyle.Bold);
-            this.tab3.ForeColor = System.Drawing.Color.White;
-            this.tab3.Location = new System.Drawing.Point(217, 10);
-            this.tab3.Name = "tab3";
-            this.tab3.Size = new System.Drawing.Size(60, 15);
-            this.tab3.TabIndex = 67;
-            this.tab3.Text = "Payroll";
-            // 
-            // tab4
-            // 
-            this.tab4.AutoSize = true;
-            this.tab4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tab4.Font = new System.Drawing.Font("Nasalization Rg", 9.749999F, System.Drawing.FontStyle.Bold);
-            this.tab4.ForeColor = System.Drawing.Color.White;
-            this.tab4.Location = new System.Drawing.Point(312, 10);
-            this.tab4.Name = "tab4";
-            this.tab4.Size = new System.Drawing.Size(48, 15);
-            this.tab4.TabIndex = 68;
-            this.tab4.Text = "Stats";
             // 
             // Home
             // 
