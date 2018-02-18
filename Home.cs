@@ -94,7 +94,6 @@ namespace Kimathi_Construction
                 }
                 catch (InvalidOperationException)
                 {
-
                     //this exception occurs when the transition is not complete ;(
                 }
                 catch (System.Reflection.TargetInvocationException exp)
@@ -104,6 +103,12 @@ namespace Kimathi_Construction
                 catch (Exception exx)
                 {
                     // MessageBox.Show(exx.Message, "Try again");
+                }
+                finally
+                {
+                    //incase of transition bug
+                    UIinstance.Visible = true;
+                    UIinstance.BringToFront();
                 }
             }
 

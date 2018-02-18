@@ -32,7 +32,7 @@ namespace Kimathi_Construction
         private void PayrollUI_Load(object sender, EventArgs e)
         {
             //UI code
-            SetToolTip(owner, "Follow at twitter @Job_Getabu ;)");
+            SetToolTip(owner, "Follow twitter @Job_Getabu ;)");
 
             GridInitializer(DateTime.Now);
         }
@@ -109,7 +109,7 @@ namespace Kimathi_Construction
             //change color of INX to green
             //gData.Columns[0].DefaultCellStyle.ForeColor = Color.Blue;
 
-            var bb = leo.Day;
+            var bb = leo.Date.ToShortDateString();
 
             var workListAsync = await Task.Factory.StartNew(() =>
             {
@@ -117,7 +117,7 @@ namespace Kimathi_Construction
                 {
                     return context.Works
                     .OrderBy(x => x.Id)
-                    .Where(t => t.TimeIn.Value.Day == bb)
+                    //.Where(t => t.TimeIn.Value.Date.ToShortDateString() == bb)
                     .ToList();
                 }
             });
@@ -128,26 +128,52 @@ namespace Kimathi_Construction
             {
                 foreach (var item in workListAsync)
                 {
-                    var hrs = item.TimeOut.Value - item.TimeIn.Value;
-                    var pay = hrs.TotalHours * int.Parse(tbRate.Text);
+                    if (item.TimeIn.Value.Date.ToShortDateString().Equals(bb))
+                    {
+                        var hrs = item.TimeOut.Value - item.TimeIn.Value;
+                        var pay = hrs.TotalHours * int.Parse(tbRate.Text);
 
-                    gData.Rows.Add(new string[]
-                        {
+                        gData.Rows.Add(new string[]
+                            {
                           null,
-                          $"{item.Employee.IdNum}",
-                          $"{item.Employee.Name}",
+                          $"{empFound(item.IdNum_fk).IdNum}",
+                          $"{empFound(item.IdNum_fk).Name}",
                           $"{item.TimeIn.Value.ToShortTimeString()}",
                           $"{item.TimeOut.Value.ToShortTimeString()}",
                           $"KES {String.Format("{0:0,0}", pay)}",
                            null,
-                           null                          
-                        });
+                           null
+                            }); 
+                    }
                 }
             }
             catch (Exception)
             {
                 throw;
             }
+        }
+        private Employee empFound(long idnum)
+        {
+            using (var context = new KimathiEntities())
+            {
+                var userList = context.Employees.ToList();
+
+                foreach (var ss in userList.Where(a => a.IdNum == (idnum)))
+                {
+                    if (ss.IdNum == idnum)
+                    {
+                        return ss;
+                    }
+
+                }
+                return null;
+            }
+        }
+        private void dTimePickerGrid_ValueChanged(object sender, EventArgs e)
+        {
+            //set up the GridInitilizer
+            var dt = dTimePickerGrid.Value;
+            GridInitializer(dt);
         }
     }
 }
