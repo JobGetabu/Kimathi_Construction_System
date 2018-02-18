@@ -289,6 +289,7 @@ namespace Kimathi_Construction
                         d.IdNum_fk = theemp.IdNum;
                         d.TimeIn = dTimePickerIn.Value;
                         d.TimeOut = dTimePickerOut.Value;
+                        d.Payed = 0;
                         //d.Employee = theemp;
 
                         try
