@@ -32,7 +32,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.owner = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnSave1 = new System.Windows.Forms.Button();
+            this.btnRefresh = new System.Windows.Forms.Button();
             this.dTimePickerIn = new System.Windows.Forms.DateTimePicker();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.cartesianChart1 = new LiveCharts.WinForms.CartesianChart();
@@ -66,7 +66,7 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnSave1);
+            this.panel1.Controls.Add(this.btnRefresh);
             this.panel1.Controls.Add(this.dTimePickerIn);
             this.panel1.Controls.Add(this.bunifuCustomLabel1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -75,22 +75,23 @@
             this.panel1.Size = new System.Drawing.Size(976, 38);
             this.panel1.TabIndex = 13;
             // 
-            // btnSave1
+            // btnRefresh
             // 
-            this.btnSave1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(40)))), ((int)(((byte)(114)))));
-            this.btnSave1.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnSave1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(195)))), ((int)(((byte)(171)))));
-            this.btnSave1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(195)))), ((int)(((byte)(171)))));
-            this.btnSave1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(195)))), ((int)(((byte)(171)))));
-            this.btnSave1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave1.Font = new System.Drawing.Font("Nasalization Rg", 9.999999F, System.Drawing.FontStyle.Bold);
-            this.btnSave1.ForeColor = System.Drawing.Color.White;
-            this.btnSave1.Location = new System.Drawing.Point(808, 6);
-            this.btnSave1.Name = "btnSave1";
-            this.btnSave1.Size = new System.Drawing.Size(90, 27);
-            this.btnSave1.TabIndex = 19;
-            this.btnSave1.Text = "Refresh";
-            this.btnSave1.UseVisualStyleBackColor = false;
+            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(40)))), ((int)(((byte)(114)))));
+            this.btnRefresh.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.btnRefresh.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(195)))), ((int)(((byte)(171)))));
+            this.btnRefresh.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(195)))), ((int)(((byte)(171)))));
+            this.btnRefresh.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(195)))), ((int)(((byte)(171)))));
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.Font = new System.Drawing.Font("Nasalization Rg", 9.999999F, System.Drawing.FontStyle.Bold);
+            this.btnRefresh.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.Location = new System.Drawing.Point(808, 6);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(90, 27);
+            this.btnRefresh.TabIndex = 19;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // dTimePickerIn
             // 
@@ -149,7 +150,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.Framework.UI.BunifuCustomLabel owner;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnSave1;
+        private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.DateTimePicker dTimePickerIn;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private LiveCharts.WinForms.CartesianChart cartesianChart1;

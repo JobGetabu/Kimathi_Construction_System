@@ -32,14 +32,14 @@ namespace Kimathi_Construction
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
+        }   
 
         private void SetToolTip(Control ctl, string message)
         {
             ToolTip toolTip1 = new ToolTip();
             toolTip1.UseFading = true;
             toolTip1.UseAnimation = true;
-            //toolTip1.IsBalloon = true;
+            toolTip1.IsBalloon = true;
             toolTip1.AutoPopDelay = 5000;
             toolTip1.InitialDelay = 1000;
             toolTip1.ReshowDelay = 500;
@@ -123,6 +123,7 @@ namespace Kimathi_Construction
 
             //Show FeePayment
             TabSwitcher(EmployeeUI.Instance);
+            //TODO Create a global loader
         }
 
         private void tab2_Click(object sender, EventArgs e)
@@ -133,6 +134,7 @@ namespace Kimathi_Construction
 
             //Show FeePayment
             TabSwitcher(StockUI.Instance);
+            //Create a global loader
         }
 
         private void Home_Load(object sender, EventArgs e)
@@ -152,6 +154,8 @@ namespace Kimathi_Construction
 
             //Show FeePayment
             TabSwitcher(PayrollUI.Instance);
+            //Create a global loader
+            PayrollUI.Instance.Global_PayrollUI_Load();
         }
 
         private void tab4_Click(object sender, EventArgs e)
@@ -162,6 +166,8 @@ namespace Kimathi_Construction
 
             //Show FeePayment
             TabSwitcher(StatsUI.Instance);
+            //Create a global loader
+            StatsUI.Instance.Global_StatsUI_Load();
         }
     }
 }

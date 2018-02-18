@@ -267,7 +267,7 @@ namespace Kimathi_Construction
                     else
                     {
                         //now update 
-                        temp1.FirstOrDefault().AmountIn = int.Parse(tbcementreg.Text);
+                        temp1.FirstOrDefault().AmountIn += int.Parse(tbcementreg.Text);
                         temp1.FirstOrDefault().AmountOut += int.Parse(tbcementused.Text);
                         temp1.FirstOrDefault().Quantity = temp1.FirstOrDefault().AmountIn - temp1.FirstOrDefault().AmountOut;
 
@@ -351,7 +351,7 @@ namespace Kimathi_Construction
                     else
                     {
                         //now update 
-                        temp2.FirstOrDefault().AmountIn = int.Parse(tbwaterreg.Text);
+                        temp2.FirstOrDefault().AmountIn += int.Parse(tbwaterreg.Text);
                         temp2.FirstOrDefault().AmountOut += int.Parse(tbwaterused.Text);
                         temp2.FirstOrDefault().Quantity = temp2.FirstOrDefault().AmountIn - temp1.FirstOrDefault().AmountOut;
 
@@ -434,7 +434,7 @@ namespace Kimathi_Construction
                     else
                     {
                         //now update 
-                        temp3.FirstOrDefault().AmountIn = int.Parse(tbbrickreg.Text);
+                        temp3.FirstOrDefault().AmountIn += int.Parse(tbbrickreg.Text);
                         temp3.FirstOrDefault().AmountOut += int.Parse(tbbrickused.Text);
                         temp3.FirstOrDefault().Quantity = temp3.FirstOrDefault().AmountIn - temp3.FirstOrDefault().AmountOut;
 

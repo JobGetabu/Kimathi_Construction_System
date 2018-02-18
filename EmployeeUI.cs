@@ -31,6 +31,11 @@ namespace Kimathi_Construction
             InitializeComponent();
         }
 
+        public void Gloabal_EmployeeUI_Load()
+        {
+           
+            CheckInPrep();
+        }
         private void EmployeeUI_Load(object sender, EventArgs e)
         {
             //UI code

@@ -32,6 +32,10 @@ namespace Kimathi_Construction
             InitializeComponent();
         }
 
+        public void Global_PayrollUI_Load()
+        {
+            GridInitializer(DateTime.Now);
+        }
         private void PayrollUI_Load(object sender, EventArgs e)
         {
             //UI code
