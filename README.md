@@ -19,7 +19,6 @@ in the construction site.
 
 ![kimathi33](https://user-images.githubusercontent.com/22516895/36357433-01d5190c-150f-11e8-9f18-6cba70e2f45c.gif)
 
-
 ### LiveChart Analysis [Open Source](https://github.com/JobGetabu/Live-Charts)
 
 ![screenshot 434](https://user-images.githubusercontent.com/22516895/36291013-9ee795c2-12d9-11e8-938f-41270e9e9438.png)
