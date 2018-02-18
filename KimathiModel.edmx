@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="ConstructionModel.Store" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="ConstructionModel.Store" Provider="System.Data.SqlServerCe.4.0" ProviderManifestToken="4.0" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Employee">
           <Key>
             <PropertyRef Name="IdNum" />
@@ -41,6 +41,7 @@
           <Property Name="TimeIn" Type="datetime" />
           <Property Name="IdNum_fk" Type="bigint" Nullable="false" />
           <Property Name="TimeOut" Type="datetime" />
+          <Property Name="Payed" Type="int" />
         </EntityType>
         <Association Name="Empl_Fk">
           <End Role="Employee" Type="Self.Employee" Multiplicity="1">
@@ -66,8 +67,7 @@
             <End Role="Work" EntitySet="Work" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="ConstructionModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -109,6 +109,7 @@
           <Property Name="IdNum_fk" Type="Int64" Nullable="false" />
           <Property Name="TimeOut" Type="DateTime" Precision="3" />
           <NavigationProperty Name="Employee" Relationship="Self.Empl_Fk" FromRole="Work" ToRole="Employee" />
+          <Property Name="Payed" Type="Int32" />
         </EntityType>
         <Association Name="Empl_Fk">
           <End Role="Employee" Type="Self.Employee" Multiplicity="1">
@@ -174,6 +175,7 @@
           <EntitySetMapping Name="Works">
             <EntityTypeMapping TypeName="ConstructionModel.Work">
               <MappingFragment StoreEntitySet="Work">
+                <ScalarProperty Name="Payed" ColumnName="Payed" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
                 <ScalarProperty Name="TimeIn" ColumnName="TimeIn" />
                 <ScalarProperty Name="IdNum_fk" ColumnName="IdNum_fk" />
