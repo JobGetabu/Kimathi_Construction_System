@@ -135,20 +135,23 @@ namespace Kimathi_Construction
                 }
                 if (e.ColumnIndex == 0)
                 {
-                    if (MetroMessageBox.Show(this, "Payment", $"Hi do you want to pay {this.gData.Rows[e.RowIndex].Cells[1].Value.ToString()} {this.gData.Rows[e.RowIndex].Cells[5].Value.ToString()}", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question) == DialogResult.Yes)
+                    if (MetroMessageBox.Show(this, $"Hi do you want to pay {this.gData.Rows[e.RowIndex].Cells[2].Value.ToString()} {this.gData.Rows[e.RowIndex].Cells[5].Value.ToString()}", "Payment", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question) == DialogResult.Yes)
                     {
                         //this employee wages have been payed
                         //get instance of employee and pay
-                        var xx = await GridDelImageAsync(e.RowIndex));
+                        Work xx = (await GridDelImageAsync(e.RowIndex));
                         xx.Payed = 1;
+                        
                         try
                         {
                             using (var context = new KimathiEntities())
                             {
-                                context.Entry<Work>(await GridDelImageAsync(e.RowIndex)).State = EntityState.Modified;
+                                context.Entry<Work>(xx).State = EntityState.Modified;
                                 context.SaveChanges();
                                 //short Custom Notification
                                 alert.Show("Payment Successfull", alert.AlertType.info);
+                                //Load the grid again
+                                GridInitializer(dTimePickerGrid.Value);
                             }
                         }
                         catch (Exception) { }
@@ -254,6 +257,12 @@ namespace Kimathi_Construction
                 }
             }
             return null;
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            //Load the grid again
+            GridInitializer(dTimePickerGrid.Value);
         }
     }
 }
